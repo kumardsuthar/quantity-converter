@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+    <title>LENGTH CONVERTER</title>
+</head>
+<body>
+    
+    <h1>LENGTH CONVERTER</h1> <br>
+    
+<div id="main">
+
+    <div class="tem" >
+          <h2>Kilo meter</h2>
+          <input type="text" value="0" class="int" id="km">
+    </div>
+    <div class="tem">
+        <h2>meter</h2>
+        <input type="text" value="000" class="int" id="m">
+    </div>
+    <div class="tem">
+        <h2>mili meter</h2>
+        <input type="text" value="000000" class="int" id="mm">
+    </div>
+</div>
+
+
+<script>
+
+    let km = document.getElementById("km");
+    let m = document.getElementById("m");
+    let mm = document.getElementById("mm");
+
+   
+
+    km.addEventListener("input", function(){
+        let k = this.value;
+        let mili= (k * 1000);
+        let mlm = (k * 1000000);
+    
+
+        m.value=mili;
+        mm.value = mlm;
+    });
+  
+
+    m.addEventListener("input", function(){
+        let mili = this.value;
+        let mlm = (mili * 1000);
+        let k = (mili / 1000); 
+
+        // if(! Number.isInteger(mlm)){
+        //     mlm= mlm.toFixed(4);
+        // };
+        // if(! Number.isInteger(mili)){
+        //     mili= mili.toFixed(4);
+        // };
+        km.value=k;
+        mm.value=mlm;
+});
+
+
+    mm.addEventListener('input', function(){
+        let mlm = this.value;
+        let mili = (mlm / 1000) ;
+        let k= (mlm / 1000000);
+
+        km.value= k;
+        m.value= mili;
+    })
+
+
+</script>
+</body>
+</html>

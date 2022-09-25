@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+    <title>TEMPRATURE CONVERTER</title>
+</head>
+<body>
+    
+    <h1>TEMPRATURE CONVERTER</h1> 
+<div id="main">
+   <br>
+    <div class="tem" >
+          <h2>Celsius</h2> 
+          <input type="text" value="0" class="int" id="cel">
+    </div>
+    <div class="tem">
+        <h2>Fahrenheit</h2>
+        <input type="text" value="32" class="int" id="fen">
+    </div>
+    <div class="tem">
+        <h2>kelvien</h2>
+        <input type="text" value="273" class="int" id="kel">
+    </div>
+</div>
+
+
+<script>
+
+    let cel = document.getElementById("cel");
+    let fen = document.getElementById("fen");
+    let kel = document.getElementById("kel");
+
+   
+
+    cel.addEventListener("input", function(){
+        let c = this.value;
+        let k= ( c - (-273) );
+        let f = (c * 9/5) + 32;
+        
+        if(! Number.isInteger(f)){
+            f= f.toFixed(4);
+        };
+
+        fen.value=f;
+         kel.value = k;
+    });
+  
+
+    fen.addEventListener("input", function(){
+        let f = this.value;
+        let c = (f - 32) * 5/9;
+        let k = (f - 32) * 5/9 + 273.15; 
+
+        if(! Number.isInteger(c)){
+            c= c.toFixed(4);
+        };
+        if(! Number.isInteger(k)){
+            k= k.toFixed(4);
+        };
+        cel.value=c;
+        kel.value=k;
+});
+
+
+    kel.addEventListener('input', function(){
+        let k = this.value;
+        let f = (k - 273.15) * 9/5 +32 ;
+        let c= k-273.15;
+        if(! Number.isInteger(f)){
+            f= f.toFixed(4);
+        };
+        if(! Number.isInteger(c)){
+            c= c.toFixed(4);
+        };
+        cel.value= c;
+        fen.value= f;
+    })
+
+
+</script>
+</body>
+</html>

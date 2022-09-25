@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+    <title>ENERGY CONVERTER</title>
+</head>
+<body>
+    
+    <h1>ENERGY CONVERTER</h1> <br>
+<div id="main">
+   
+    <div class="tem" >
+          <h2>Joule</h2>
+          <input type="text" value="00" class="int" id="jol">
+    </div>
+    <div class="tem">
+        <h2>Kilojoule</h2>
+        <input type="text" value="00" class="int" id="kjol">
+    </div>
+    <div class="tem">
+        <h2>Electro watt</h2>
+        <input type="text" value="00" class="int" id="ewatt">
+    </div>
+    <!-- <div class="tem">
+        <h2>Kilowatt hour</h2>
+        <input type="text" value="000" class="int" id="kwatt">
+    </div> -->
+</div>
+
+
+<script>
+
+    let jol = document.getElementById("jol");
+    let kjol = document.getElementById("kjol");
+    let ewatt = document.getElementById("ewatt");
+    let kwatt = document.getElementById("kwatt");
+
+   jol.addEventListener("input", function (){
+        let j = this.value;
+        let kj = (j /1000) ;
+        let ew = (j * 6.242 * 1000000000000000000) ;
+        let kw = (j * 2.778 )/ 100000000 ;
+
+        jol.value= j;
+        kjol.value = kj;
+        ewatt.value = ew;
+        kwatt.value= kw;
+   })
+
+
+</script>
+</body>
+</html>
