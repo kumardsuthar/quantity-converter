@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantity.css">
+    <title>Energy Converter/title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apk.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="shortcut icon" href="convert.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;"><i class="fa fa-home" style="margin: 0px 10px;"></i>Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+<div id="main">
+    <h1>ENERGY CONVERTER</h1> 
+    <div id="inner-qn" >
+          <h2>Joule</h2>
+          <input type="text" value="00" class="int" id="jol">
+ 
+        <h2>Kilojoule</h2>
+        <input type="text" value="00" class="int" id="kjol">
+
+        <h2>Electro watt</h2>
+        <input type="text" value="00" class="int" id="ewatt">
+    </div>
+    <!-- <div class="tem">
+        <h2>Kilowatt hour</h2>
+        <input type="text" value="000" class="int" id="kwatt">
+    </div> -->
+</div>
+
+<!-- type of energy -->
+<div id="en-other-formula" style="max-width: 800px;margin: 20px auto;padding: 20px 10px;">
+<h4>Understanding Energy Units:</h4>
+ 
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+        <p><span style="font-weight: 600;">Joule (J):</span> The SI unit of energy, named after James Prescott Joule. It represents the work done when a force of one newton acts over a distance of one meter.</p>
+    </div>
+
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+        <p><span style="font-weight: 600;">Electronvolt (eV): </span>  Used in atomic and nuclear physics, it represents the energy gained by an electron when it falls through an electric potential difference of one volt.</p>
+    </div>
+
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+        <p><span style="font-weight: 600;">Watt-hour (Wh) and Kilowatt-hour (kWh):</span> These units measure electrical energy. A watt-hour is the energy used when one watt of power is applied for one hour. A kilowatt-hour is 1,000 watt-hours and is commonly used in electricity bills.</p>
+    </div>
+
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+        <p><span style="font-weight: 600;">Calorie (cal):</span>  Often used in nutrition, it represents the energy needed to raise the temperature of one gram of water by one degree Celsius. There are two types of calories: the calorie (cal) and the kilocalorie (kcal), also known as the Calorie with a capital C.</p>
+    </div>
+
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+        <p><span style="font-weight: 600;">JBritish thermal unit (Btu):</span> Primarily used in the United States, it represents the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit.</p>
+    </div>
+</div>
+
+<div id="ln-other-formula">
+ 
+    <div class="example ln-ex">
+        <h4>Joules (J) to Calories (cal):</h4>
+        <p>Multiply Joules by 0.239 (1 J ≈ 0.239 cal)</p>
+    </div>
+
+    <div class="example ln-ex">
+        <h4>Calories (cal) to Joules (J): </h4>
+        <p>Multiply Calories by 4.184 (1 cal ≈ 4.184 J) </p>
+    </div>
+
+    <div class="example ln-ex">
+        <h4>Electronvolts (eV) to Joules (J):  </h4>
+        <p> Multiply electronvolts by 1.602 x 10^-19 (1 eV ≈ 1.602 x 10^-19 J)</p>
+    </div>
+
+    <div class="example ln-ex">
+        <h4>Watt-hours (Wh) to Kilowatt-hours (kWh): </h4>
+        <p> Divide watt-hours by 1000 (1 kWh = 1000 Wh)</p>
+    </div>
+</div>
+<div id="footer">
+    <ul>
+     <li><a href="temp.html">Temperature Converter</a></li>
+     <li><a href="length.html">Length Converter</a></li>
+     <li><a href="currency.html">Currency converter</a></li>
+     <li><a href="angle.html">Angle Converter</a></li>
+     <li><a href="weight.html">Weight Converter</a></li>
+     <li><a href="energy.html">Energy Converter</a></li>
+    </ul>
+
+</div>
+<script>
+
+    let jol = document.getElementById("jol");
+    let kjol = document.getElementById("kjol");
+    let ewatt = document.getElementById("ewatt");
+    let kwatt = document.getElementById("kwatt");
+
+   jol.addEventListener("input", function (){
+        let j = this.value;
+        let kj = (j /1000) ;
+        let ew = (j * 6.242 * 1000000000000000000) ;
+        let kw = (j * 2.778 )/ 100000000 ;
+
+        jol.value= j;
+        kjol.value = kj;
+        ewatt.value = ew;
+        kwatt.value= kw;
+   })
+
+
+</script>
+</body>
+</html>

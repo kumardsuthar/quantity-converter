@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantity.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apk.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     <link rel="shortcut icon" href="convert.png" type="image/x-icon">
+    <title>Angle Converter</title>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;"><i class="fa fa-home" style="margin: 0px 10px;"></i>Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+   
+<div id="main">
+    <h1>ANGLE CONVERTER</h1> 
+    <div id="inner-qn">
+          <h2>DEGREE</h2>
+          <input type="text" value="0" class="int" id="deg">
+   
+        <h2>RADIAN</h2>
+        <input type="text" value="0" class="int" id="rad">
+  
+        <h2>GRADIAN</h2>
+        <input type="text" value="0" class="int" id="gra">
+    </div>
+</div>
+
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>A Guide to Angle Conversion.</h1>
+        <h5>Angles are everywhere in geometry, trigonometry, and even everyday life. But measuring and converting them can sometimes feel like solving a puzzle. This guide will equip you with the knowledge and tools to navigate the world of angle conversions with ease!</h5>
+
+        <h4>Understanding Angular Measurement:</h4>
+        <p><span style="font-weight: 600;">Degrees (°):</span> The most common unit, dividing a full circle (360°) into equal parts.
+           </p>
+           <p> <span style="font-weight: 600;">Radians (rad):</span> A unit based on the ratio of the arc length to the circle's radius, with a full circle equal to 2π radians (π being a mathematical constant approximately equal to 3.14).</p>
+           <p><span style="font-weight: 600;">Gradians (gon):</span> A less common unit, dividing a full circle into 400 gradians.</p>
+    </div>
+    <div class="example">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+
+          <h4>Conversion Formulas:</h4>
+<p>Here are the essential formulas for converting between degrees, radians, and gradians:</p>
+          <p> <span style="font-weight: 600;">Degrees to Radians: </span>Radians = Degrees × (π / 180°)</p>
+          <p> <span style="font-weight: 600;">Radians to Degrees:  </span> Degrees = Radians × (180° / π)</p>
+          <p> <span style="font-weight: 600;">Gradians to Degrees: </span> Degrees = Gradians × (9/10)</p>
+          <p> <span style="font-weight: 600;"> Degrees to Gradians:</span> Gradians = Degrees × (10/9)</p>
+
+    </div>
+</div>
+
+<div id="en-other-formula" style="max-width: 1000px;margin: 20px auto;padding: 20px 10px;">
+  
+    <h4>Convert degrees to radians:</h4>
+    
+        <div class="example ln-ex">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+            
+            <h3>Example:
+                </h3>
+                <p> Convert 45 degrees to radians:</p>
+            <h4>Radians = 45° × (π / 180°) ≈ 0.785 radians</h4>
+            
+        </div>
+        </div>
+
+        <div id="en-other-formula" style="max-width: 1000px;margin: 20px auto;padding: 20px 10px;">
+  
+            <h4>Tips for Remembering Conversions:</h4>
+            
+                <div class="example ln-ex">
+                    <div>
+                        <i class="fa fa-circle" style="color: #ff0000;"></i>
+                        <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                        <i class="fa fa-circle" style="color: #00ff62;"></i>
+            
+                    </div>
+                    
+                  <p><span style="font-weight: 600;">Memorize Key Conversions:</span> Remember the conversion factors (π/180 and 180/π) for degrees-radians conversions.</p>
+
+                  <p><span style="font-weight: 600;">Use Online Tools:</span> Numerous online converters can handle complex conversions for you.</p>
+
+                  <p><span style="font-weight: 600;">Practice Makes Perfect:</span> Regularly test yourself with conversion problems to solidify your understanding.</p>
+                </div>
+                </div>
+                <div id="footer">
+                    <ul>
+                     <li><a href="temp.html">Temperature Converter</a></li>
+                     <li><a href="length.html">Length Converter</a></li>
+                     <li><a href="currency.html">Currency converter</a></li>
+                     <li><a href="angle.html">Angle Converter</a></li>
+                     <li><a href="weight.html">Weight Converter</a></li>
+                     <li><a href="energy.html">Energy Converter</a></li>
+                    </ul>
+            
+                </div>
+<script>
+
+    let rup = document.getElementById("deg");
+    let dol = document.getElementById("rad");
+    let eur = document.getElementById("gra");
+
+   
+
+    rup.addEventListener("input", function(){
+        let d = this.value;
+        let r= ( d*  0.0174);
+        let g =  ( d * 1.1111);
+      
+        dol.value=r;
+         eur.value = g;
+    });
+
+    dol.addEventListener("input", function(){
+        let r = this.value;
+        let d = ( r * 57.29) ;
+        let g = ( r * 63.66 );
+      
+        rup.value = d;
+        eur.value= g;
+    });
+
+    eur.addEventListener("input" , function(){
+        let g = this.value;
+        let r = ( g * 0.0157) ;
+        let d = ( g *0.9 );
+         
+   
+
+        rup.value=d;
+        dol.value=r;
+    })
+  
+
+   
+
+
+</script>
+</body>
+</html>

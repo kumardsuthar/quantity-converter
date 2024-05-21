@@ -1,0 +1,229 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main
+{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+#main h1
+{
+    color: #444444;
+    text-transform:capitalize;
+    font-size: 44px;
+}
+#main h2
+{
+    font-size: 14px;
+    text-align: left;
+    color: #00000093;
+}
+#main input
+{
+    width: 300px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    filter: drop-shadow(0 5px 8px #0000000a) drop-shadow(0 4px 3px #0000001a);
+    border: none;
+    border: 1px solid white;
+}
+#main input:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(210, 209, 209);
+}
+.for-content
+{
+    max-width: 1000px;
+    margin: 20px auto 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* quantity example  */
+#un-example , #other-formula
+{
+    max-width: 1100px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#ln-other-formula
+{
+    max-width: 1100px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;  
+}
+#other-formula{
+    margin: 40px auto !important;
+}
+#un-example p
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: #444444;
+}
+.ln-ex p
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+.ln-ex p i
+{
+    font-size: 7px !important;
+}
+.formula
+{
+    width: 500px;
+}
+.ln-ex
+{
+    margin: 10px 0px;
+}
+.formula p
+{
+    margin: 40px 0px;
+}
+.example  , .for-list
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.example i , .for-list i , .formula i
+{
+    font-size: 13px;
+    
+}
+
+
+/* style for currency pge */
+
+.cur-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+
+    /* filter: drop-shadow(0 5px 8px #0000000a) drop-shadow(0 4px 3px #0000001a); */
+
+}
+.cur-div p
+{
+   
+    font-size: 13px;
+}
+.cur-div .cur 
+{
+    margin: 0px 20px;
+}
+.cur-div .rate
+{
+    margin: 0px 20px;
+}
+.cur-div .rate p
+{
+    font-weight: 600 !important;
+
+}
+.en-for h1
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: #444444;
+    margin: 5px 10px;
+}
+@media (max-width:1010px)
+{
+    .for-content{
+        margin: 20px 10px 50px 10px;
+    }
+}
+@media (max-width:964px)
+{
+    #other-formula
+    {
+        display: block;
+
+    }
+    .for-list
+    {
+        margin: 10px 0px;
+    }
+
+}
+@media (max-width:768px)
+{
+    #ln-other-formula
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (max-width:680px)
+{
+    #un-example
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .formula
+    {
+        width: fit-content;
+    }
+    #main h1
+    {
+        font-size: 35px;
+    }
+    .formula h1
+    {
+        font-size: 25px;
+    }
+    .for-content p
+    {
+        font-size: 13px;
+    }
+    #other-formula 
+    {
+        margin: 10px auto !important;
+    }
+}
+
+@media (max-width:440px)
+{
+    #main h1
+    {
+        font-size: 28px;
+    }
+    #main
+    {
+        height: fit-content;
+        padding: 50px 10px;
+    }
+}

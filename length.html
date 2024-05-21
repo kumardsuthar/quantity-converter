@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apk.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="shortcut icon" href="convert.png" type="image/x-icon">
+
+    <title>length Converter/title>
+</head>
+<body>
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;">Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+
+    
+<div id="main">
+    <h1>LENGTH CONVERTER</h1> 
+    <div id="inner-qn">
+          <h2>Kilo meter</h2>
+          <input type="text" value="0" class="int" id="km">
+    
+   
+        <h2>meter</h2>
+        <input type="text" value="000" class="int" id="m">
+    
+        <h2>mili meter</h2>
+        <input type="text" value="000000" class="int" id="mm">
+    </div>
+</div>
+
+<div class="for-content">
+    <h4>The two main measurement systems are:</h4>
+
+    <p><span style="font-weight: 600;">Metric System :</span> Based on the meter (m) as the fundamental unit, it uses a decimal system for easy conversions (e.g., centimeters, kilometers).</p>
+
+    <p><span style="font-weight: 600;">Imperial System :</span>  Primarily used in the United States, it uses a combination of units like inches (in), feet (ft), and yards (yd). Conversions can involve fractions and memorization.</p>
+</div>
+
+<div id="ln-other-formula">
+ 
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Metric System:</h4>
+
+          <p>  1 meter (m) = 100 centimeters (cm)</p>
+          <p>1 meter (m) = 1000 millimeters (mm)</p>
+      
+          <p> 1 kilometer (km) = 1000 meters (m)</p>
+          <p> 1 centimeter (cm) = 10 millimeters (mm)</p>
+          <p> 1 millimeter (mm) = 0.1 centimeters (cm)</p>
+    </div>
+
+ 
+    <div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Imperial System:</h4>
+
+          <p> 1 foot (ft) = 12 inches (in)</p>
+         
+    <p>1 yard (yd) = 3 feet (ft)</p>
+<p>1 mile (mi) = 1760 yards (yd)</p>
+<p>1 inch (in) = 2.54 centimeters (cm)</p>
+<p>1 foot (ft) = 30.48 centimeters (cm)</p>
+<p>1 yard (yd) = 0.9144 meters (m)</p>
+<p>1 mile (mi) = 1609.34 meters (m)</p>
+    </div>
+
+<div class="example ln-ex">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Conversion Formulas:</h4>
+
+       <p>   To convert length from meters to kilometers: km = m / 1000</p>
+<p>To convert length from kilometers to meters: m = km x 1000</p>
+<p>To convert length from centimeters to millimeters: mm = cm x 10</p>
+<p>To convert length from millimeters to centimeters: cm = mm / 10</p>
+<p>To convert length from inches to feet: ft = in / 12</p>
+<p>To convert length from feet to inches: in = ft x 12</p>
+<p>To convert length from yards to feet: ft = yd x 3</p>
+    </div>
+</div>
+
+<div id="footer">
+    <ul>
+     <li><a href="temp.html">Temperature Converter</a></li>
+     <li><a href="length.html">Length Converter</a></li>
+     <li><a href="currency.html">Currency converter</a></li>
+     <li><a href="angle.html">Angle Converter</a></li>
+     <li><a href="weight.html">Weight Converter</a></li>
+     <li><a href="energy.html">Energy Converter</a></li>
+    </ul>
+
+</div>
+<script>
+
+    let km = document.getElementById("km");
+    let m = document.getElementById("m");
+    let mm = document.getElementById("mm");
+
+   
+
+    km.addEventListener("input", function(){
+        let k = this.value;
+        let mili= (k * 1000);
+        let mlm = (k * 1000000);
+    
+
+        m.value=mili;
+        mm.value = mlm;
+    });
+  
+
+    m.addEventListener("input", function(){
+        let mili = this.value;
+        let mlm = (mili * 1000);
+        let k = (mili / 1000); 
+
+        // if(! Number.isInteger(mlm)){
+        //     mlm= mlm.toFixed(4);
+        // };
+        // if(! Number.isInteger(mili)){
+        //     mili= mili.toFixed(4);
+        // };
+        km.value=k;
+        mm.value=mlm;
+});
+
+
+    mm.addEventListener('input', function(){
+        let mlm = this.value;
+        let mili = (mlm / 1000) ;
+        let k= (mlm / 1000000);
+
+        km.value= k;
+        m.value= mili;
+    })
+
+
+</script>
+</body>
+</html>

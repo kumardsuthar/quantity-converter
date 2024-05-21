@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantity.css">
+    <link rel="stylesheet" href="apk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="shortcut icon" href="convert.png" type="image/x-icon">
+
+    <title>Temperature Converter</title>
+</head> 
+<body>
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;"><i class="fa fa-home" style="margin: 0px 10px;"></i>Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+
+  
+<div id="main">
+    <h1>Temprature converter</h1> 
+  
+ 
+         <div id="inner-qn">
+            <h2>Celsius</h2> 
+            <input type="text" value="0" class="int" id="cel">
+    
+      
+          <h2>Fahrenheit</h2>
+          <input type="text" value="32" class="int" id="fen">
+   
+      
+          <h2>kelvien</h2>
+          <input type="text" value="273" class="int" id="kel">
+  
+         </div>
+</div>
+
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>convert from Celsius to Fahrenheit</h1>
+        <p><span style="font-weight: 600;">Celsius:</span> Developed by Swedish astronomer Anders Celsius in 1742, this scale sets 0°C as the freezing point of water and 100°C as its boiling point. It's based on the decimal system, making calculations easier.
+           </p>
+           <p> <span style="font-weight: 600;">Fahrenheit:</span> Developed by German physicist Daniel Fahrenheit in 1714, this scale sets 32°F as the freezing point of water and 212°F as its boiling point. The origin of these values is a bit more obscure!</p>
+    </div>
+    <div class="example">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Fahrenheit = (Celsius x 9/5) + 32</h4>
+
+          <p>For example, to convert 20 degrees Celsius to Fahrenheit:</p>
+        
+          <p> Multiply Celsius by 9/5: 20 (Celsius) * 9/5 = 36</p>
+           <p> Add 32: 36 + 32 = 68</p>
+         <p> Therefore, 20 degrees Celsius is equal to 68 degrees Fahrenheit.</p>
+    </div>
+</div>
+
+
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>convert from Celsius to Kelvin</h1>
+        <p><span style="font-weight: 600;">Celsius:</span> Developed by Anders Celsius, this scale sets 0°C as the freezing point of water and 100°C as its boiling point. It's widely used for everyday temperatures.
+           </p>
+           <p> <span style="font-weight: 600;">Kelvin:</span> Named after William Thomson, Lord Kelvin, this thermodynamic temperature scale sets absolute zero (the point where all molecular motion stops) at 0 K. The freezing point of water on the Kelvin scale is approximately 273.15 K.</p>
+    </div>
+    <div class="example">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Kelvin = Celsius + 273.15</h4>
+
+          <p>For example, to convert 20 degrees Celsius to Kelvin:</p>
+        
+         
+           <p> Add 273.15 to the Celsius temperature: 20°C + 273.15 = 293.15 K</p>
+         <p> Therefore, 20°C is equal to 293.15 K.</p>
+    </div>
+</div>
+<!-- 3 -->
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>convert from Fahrenheit to Kelvin</h1>
+        <p><span style="font-weight: 600;">ahrenheit:</span> Developed by Daniel Fahrenheit, this scale sets 32°F as the freezing point of water and 212°F as its boiling point. It's prevalent in the United States for weather and some everyday applications.
+           </p>
+           <p> <span style="font-weight: 600;">Kelvin:</span> Named after William Thomson, Lord Kelvin, this thermodynamic temperature scale sets absolute zero (the point where all molecular motion stops) at 0 K. The freezing point of water on the Kelvin scale is approximately 273.15 K.</p>
+    </div>
+    <div class="example">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Kelvin = (Fahrenheit + 459.67) x 5/9</h4>
+
+          <p>For example, to convert 68°F to Kelvin:</p>
+        
+         
+           <p> Add 459.67 to 68Fahrenheit temperature: 68°F + 459.67 = 527.67</p>
+           <p>Multiply 527.67 by 5/9: 527.67 x (5/9) ≈ 293.15 K</p>
+         <p> Therefore, 68°F is equal to approximately 293.15 K</p>
+    </div>
+</div>
+
+<div id="other-formula">
+
+    <div class="for-list">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+         <h4>convert from Fahrenheit to Celsius </h4>
+         <p>Formula:</p>
+         <p>C = (F-32) (5/9)</p>
+    </div>
+    <div class="for-list">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+        <h4>convert from Kelvin to Fahrenheit</h4>
+        <p>Formula:</p>
+        <p>F = (K-273.15) (9/5) + 32</p>
+    </div>
+    <div class="for-list">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+        <h4>convert from kelvin to Celsius </h4>
+        <p>Formula:</p>
+        <p> C = K - 273.15</p>
+   </div>
+</div>
+
+<div id="footer">
+    <ul>
+     <li><a href="temp.html">Temperature Converter</a></li>
+     <li><a href="length.html">Length Converter</a></li>
+     <li><a href="currency.html">Currency converter</a></li>
+     <li><a href="angle.html">Angle Converter</a></li>
+     <li><a href="weight.html">Weight Converter</a></li>
+     <li><a href="energy.html">Energy Converter</a></li>
+    </ul>
+
+</div>
+<script>
+
+    let cel = document.getElementById("cel");
+    let fen = document.getElementById("fen");
+    let kel = document.getElementById("kel");
+
+   
+
+    cel.addEventListener("input", function(){
+        let c = this.value;
+        let k= ( c - (-273) );
+        let f = (c * 9/5) + 32;
+        
+        if(! Number.isInteger(f)){
+            f= f.toFixed(4);
+        };
+
+        fen.value=f;
+         kel.value = k;
+    });
+  
+
+    fen.addEventListener("input", function(){
+        let f = this.value;
+        let c = (f - 32) * 5/9;
+        let k = (f - 32) * 5/9 + 273.15; 
+
+        if(! Number.isInteger(c)){
+            c= c.toFixed(4);
+        };
+        if(! Number.isInteger(k)){
+            k= k.toFixed(4);
+        };
+        cel.value=c;
+        kel.value=k;
+});
+
+
+    kel.addEventListener('input', function(){
+        let k = this.value;
+        let f = (k - 273.15) * 9/5 +32 ;
+        let c= k-273.15;
+        if(! Number.isInteger(f)){
+            f= f.toFixed(4);
+        };
+        if(! Number.isInteger(c)){
+            c= c.toFixed(4);
+        };
+        cel.value= c;
+        fen.value= f;
+    })
+
+
+</script>
+</body>
+</html>

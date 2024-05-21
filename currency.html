@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quantity.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apk.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="shortcut icon" href="money.png" type="image/x-icon">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;"><i class="fa fa-home" style="margin: 0px 10px;"></i>Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+   
+<div id="main">
+    <h1>CURRENCY CONVERTER</h1> 
+    <div id="inner-qn" >
+          <h2>Rupee</h2>
+          <input type="text" value="0" class="int" id="rup">
+  
+        <h2>Dollor</h2>
+        <input type="text" value="0" class="int" id="dol">
+  
+        <h2>Euro</h2>
+        <input type="text" value="0" class="int" id="eur">
+    </div>
+</div>
+
+<!-- currency data  -->
+
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>Understanding Currency Exchange Rates:</h1>
+        <p>The foundation of currency conversion lies in exchange rates. An exchange rate represents the value of one currency in terms of another. It constantly fluctuates based on factors like supply and demand, interest rates, and economic stability.
+           </p>
+           <p> There's no single formula for currency conversion. Instead, you'll need the current exchange rate between the two currencies you're interested in converting.</p>
+
+           <div style="background-color: white;margin: 20px 10px; padding: 20px; border-radius: 10px;">
+         
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+          
+              <h4>Here's the basic conversion process:</h4>
+              <p><span style="font-weight: 600;">Amount in Original Currency (A):</span> This is the amount you have in the currency you want to convert from.</p>
+              <p><span style="font-weight: 600;">Exchange Rate (B):</span> This is the current exchange rate between the original currency and the target currency.</p>
+              <p><span style="font-weight: 600;">Amount in Target Currency (C):</span> This is the amount you'll get after the conversion.Amount in Target Currency (C): This is the amount you'll get after the conversion.</p>
+           </div>
+    </div>
+    <div class="example">
+        <div style=" margin: 10px auto;">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+            <h4>Foreign Currency Exchange Rates in India</h4>
+            
+            <p>Table shows foreign currency exchange rates (inter-bank) in India today. </p>
+            
+              <div class="cur-div" >
+                  <div class="cur">
+                      <h4>
+                        Currency</h4>
+                        <p>US Dollor</p>
+                        <p> Euro</p>
+                        <p> British Pound</p>
+                        <p>Australian Dollar</p>
+                        <p> UAE Dirham</p>
+                        <p> New Zealand Dollar</p>
+                        <p> Canadian Dollar</p>
+                        <p> Hong Kong Dollar</p>
+                        <p> South African Rand</p>
+                        <p> Chinese Yuan</p>
+                  </div>
+                  <div class="rate">
+                    <h4>rate</h4>
+                    <p>83.43 INR</p>
+                    <p>90.6 INR</p>
+                    <p>	105.87 INR</p>
+                    <p>55.8 INR</p>
+                    <p>22.69 INR</p>
+                    <p>51.15 INR</p>
+                    <p>61.24 INR</p>
+                    <p>10.68 INR</p>
+                    <p>4.59 INR</p>
+                    <p>11.54 INR</p>
+                  </div>
+              </div>
+             </div>
+    </div>
+</div>
+
+<div id="en-other-formula" style="max-width: 1000px;margin: 20px auto;padding: 20px 10px;">
+  
+    <h4>The conversion formula is:</h4>
+    
+        <div class="example ln-ex">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+            <h3>C = A x B</h3>
+            <h4>Example:
+                </h4>
+            <p>Let's say you have 100 US Dollars (USD) (A) and want to convert it to Euros (EUR) (C). The current exchange rate is 1 USD = 0.92 EUR (B). </p>
+            <h5>C = 100 USD (A) x 0.92 EUR/USD (B) = 92 EUR (C)</h5>
+            <p>Therefore, with an exchange rate of 0.92 EUR/USD, you would receive approximately 92 Euros for your 100 US Dollars.</p>
+        </div>
+        </div>
+        <div id="footer">
+            <ul>
+             <li><a href="temp.html">Temperature Converter</a></li>
+             <li><a href="length.html">Length Converter</a></li>
+             <li><a href="currency.html">Currency converter</a></li>
+             <li><a href="angle.html">Angle Converter</a></li>
+             <li><a href="weight.html">Weight Converter</a></li>
+             <li><a href="energy.html">Energy Converter</a></li>
+            </ul>
+    
+        </div>
+<script>
+
+    let rup = document.getElementById("rup");
+    let dol = document.getElementById("dol");
+    let eur = document.getElementById("eur");
+
+   
+
+    rup.addEventListener("input", function(){
+        let r = this.value;
+        let d= r/75;
+        let e =  ( r *13)/1000;
+        if(! Number.isInteger(d))
+        {
+            d = d.toFixed(4);
+        }
+        dol.value=d;
+         eur.value = e;
+    });
+
+    dol.addEventListener("input", function(){
+        let d = this.value;
+        let r = ( d*75) ;
+        let e = ( d * 1.01 );
+        if(! Number.isInteger(r))
+        {
+            r = r.toFixed(4);
+        }
+        rup.value = r;
+        eur.value= e;
+    });
+
+    eur.addEventListener("input" , function(){
+        let e = this.value;
+        let r = e * 79.21 ;
+        let d = e * 0.99;
+         
+        if(!Number.isInteger(d)){
+            d= d.toFixed(4);
+        }
+
+        rup.value=r;
+        dol.value=d;
+    })
+  
+
+   
+
+
+</script>
+</body>
+</html>

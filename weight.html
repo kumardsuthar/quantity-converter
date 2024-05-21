@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="quantity.css">
+    <link rel="shortcut icon" href="weight.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apk.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+<body>
+    <div id="header">
+        <div>
+             <h1> <a href="index.html" style="color: white;"><i class="fa fa-home" style="margin: 0px 10px;"></i>Quantity Convert</a></h1>
+        </div>
+      
+   </div>
+
+<div id="main">
+    <h1>WEIGHT CONVERTER</h1> 
+    <div id="inner-qn" >
+          <h2>KG</h2>
+          <input type="text" value="0" class="int" id="km">
+  
+        <h2>TON</h2>
+        <input type="text" value="0" class="int" id="ton">
+   
+        <h2>CARAT</h2>
+        <input type="text" value="0" class="int" id="carat">
+    </div>
+</div>
+
+
+<div id="un-example">
+   
+    <div class="formula">
+        <h1>There are two main categories of weight units:</h1>
+        <p><span style="font-weight: 600;">Metric System:</span> Based on the kilogram (kg) as the fundamental unit. Common metric weight units include grams (g), milligrams (mg), and tonnes (t).
+           </p>
+           <p> <span style="font-weight: 600;">Imperial System:</span> Primarily used in the United States, it uses a combination of units like pounds (lb), ounces (oz), and stones (st). Conversions can involve fractions and memorization.</p>
+    </div>
+    <div class="example">
+        <div>
+            <i class="fa fa-circle" style="color: #ff0000;"></i>
+            <i class="fa fa-circle" style="color: #FFD43B;"></i>
+            <i class="fa fa-circle" style="color: #00ff62;"></i>
+
+        </div>
+          <h4>Common Weight Units and Conversions:</h4>
+
+          <h5>Grams (g) to Kilograms (kg):</h5>
+          <p>Divide grams by 1000. (1 kg = 1000 g)</p>
+         
+          <h5>Kilograms (kg) to Milligrams (mg):</h5>
+          <p>Multiply kilograms by 1,000,000. (1 kg = 1,000,000 mg)</p>
+
+          <h5>Milligrams (mg) to Grams (g): </h5>
+          <p>Divide milligrams by 1000. (1 g = 1000 mg)</p>
+
+          <h5>Pounds (lb) to Ounces (oz): </h5>
+          <p>Multiply pounds by 16. (1 lb = 16 oz)</p>
+    </div>
+</div>
+
+<div id="en-other-formula" style="max-width: 800px;margin: 20px auto;padding: 20px 10px;">
+    <h4>Tips for Remembering Conversions:</h4>
+     
+        <div class="example ln-ex">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+    
+            <p><span style="font-weight: 600;">Focus on Unit Relationships:</span> Understand the relationships between units within each system (e.g., 1000 g in 1 kilogram).
+                </p>
+        </div>
+
+        <div class="example ln-ex">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+    
+            <p><span style="font-weight: 600;">Use Online Converters:</span> 
+
+                Numerous online tools can handle complex conversions for you.
+                </p>
+        </div>
+
+        <div class="example ln-ex">
+            <div>
+                <i class="fa fa-circle" style="color: #ff0000;"></i>
+                <i class="fa fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa fa-circle" style="color: #00ff62;"></i>
+    
+            </div>
+    
+            <p><span style="font-weight: 600;">Practice Makes Perfect:</span> 
+                Regularly test yourself with conversion problems to solidify your understanding.
+                </p>
+        </div>
+
+</div>
+<div id="footer">
+    <ul>
+     <li><a href="temp.html">Temperature Converter</a></li>
+     <li><a href="length.html">Length Converter</a></li>
+     <li><a href="currency.html">Currency converter</a></li>
+     <li><a href="angle.html">Angle Converter</a></li>
+     <li><a href="weight.html">Weight Converter</a></li>
+     <li><a href="energy.html">Energy Converter</a></li>
+    </ul>
+
+</div>
+<script>
+
+    let rup = document.getElementById("km");
+    let dol = document.getElementById("ton");
+    let eur = document.getElementById("carat");
+
+   
+
+    rup.addEventListener("input", function(){
+        let k = this.value;
+        let t= (k * 0.001 );
+        let c = ( k * 5000);
+       
+        dol.value=t;
+         eur.value = c;
+    });
+
+    dol.addEventListener("input", function(){
+        let t = this.value;
+        let k = ( t * 1000) ;
+        let c = ( t * 5000000 );
+      
+        rup.value = k;
+        eur.value= c;
+    });
+
+    eur.addEventListener("input" , function(){
+        let c = this.value;
+        let k = ( c * 0.0002) ;
+        let t = ( c * 0.00000022046);
+         
+
+
+        rup.value=k;
+        dol.value=t;
+    })
+  
+
+   
+
+
+</script>
+</body>
+</html>
